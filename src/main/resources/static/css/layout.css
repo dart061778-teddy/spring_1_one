@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* main css */
+html, body {height:100%;}
+
+
+
+.write_wrap .input_100Per {border:1px solid #dcdcdc; height:30px; width:100%; padding:0px 3px;}
+.write_wrap .input_500px {border:1px solid #dcdcdc; height:30px; width:500px; padding:0px 3px;}
+.write_wrap .input_300px {border:1px solid #dcdcdc; height:30px; width:300px; padding:0px 3px;}
+.write_wrap .input_150px {border:1px solid #dcdcdc; height:30px; width:150px; padding:0px 3px;}
+.write_wrap .input_100px {border:1px solid #dcdcdc; height:30px; width:100px; padding:0px 3px;}
+.write_wrap .input_80px {border:1px solid #dcdcdc; height:30px; width:80px; padding:0px 3px;}
+.write_wrap .input_50px {border:1px solid #dcdcdc; height:30px; width:50px; padding:0px 3px;}
+.write_wrap .input_40px {border:1px solid #dcdcdc; height:30px; width:40px; padding:0px 3px;}
+
+
+
+/* 공지사항 */
+.search_wrap {padding:60px 60px 30px;}
+.record_group {float:left;}
+.search_group {float:right;}
+.record_group span {color:#006dc6;}
+.search_group .select {height:35px; border:1px solid #e0e0e0; padding:5px;}
+.search_group .search_word {height:35px; border:1px solid #e0e0e0; padding:5px; width:220px; vertical-align:top;}
+.search_group .btn_search {height:35px; padding:5px 15px; border:1px solid #e0e0e0; background:transparent; font-size:16px; vertical-align:top;}
+.search_group button:nth-last-child(1) {padding:5px 14px; background:#fff; border:1px solid #ddd; font-size:18px;}
+.board_list {clear:both; padding:20px;}
+.board_list .board_table {width:100%;}
+.board_list th {border-top:1px solid #333; border-bottom:1px solid #333; padding:15px 5px;}
+.board_list .th_left {border-top:1px solid #333;padding:15px 5px; text-align:left;}
+.board_table td {border-bottom:1px solid #e0e0e0; padding:15px 5px; text-align:center}
+.board_table td.title {text-align:left;}
+
+
+
+.write_wrap {margin-top:10px;}
+.write_wrap th, .write_wrap td {padding:10px; border-bottom:1px solid #ddd;}
+.write_wrap th {background:#f7f8fc;}
+.write_wrap .first th, .write_wrap .first td {border-top:1px solid #333;}
+.write_wrap td {text-align:left;}
+/*
+.write_wrap input {border:1px solid #dcdcdc; height:33px; width:100%;}
+*/
+.write_wrap textarea {height:270px; width:100%;}
+.write_wrap .btn_wrap {padding:20px 0px; text-align:center;}
+.write_wrap .btn_wrap .btn_ok {width:80px; height:40px;background:#007dc6; border:0 none; color:#fff; cursor:pointer; }
+.write_wrap .btn_wrap .btn_reset {width:100px;  height:40px;background:#f78181; border:0 none; color:#fff; cursor:pointer}
+.write_wrap .btn_wrap .btn_list {width:80px;  height:40px;background:#f78181; border:0 none; color:#fff; cursor:pointer;}
+
+
+
+.leftmargin{
+	margin-top:20px;
+	margin-left:50px;
+}
+.leftmargin h1{
+	text-align:center;
+}
+
+.paging {padding-top:50px; text-align:center;}
+.paging a {padding:10px; border:1px solid #e0e0e0;}
+.paging a.active {background:#007dc6; color:#fff;}
+.paging .btn_write {background:#f78181; padding:10px 16px; color:#fff; float:right;}
+.paging a.write {right:60px; position:absolute; background:#795a55; color:#fff;}

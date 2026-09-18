@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kr.pjtone.dao.MemberDaoInterface">
+	
+	<delete id="memberDelete" parameterType="String">
+		delete from member_이재열
+		where id = #{deleteId}
+	</delete>
+	
+	<select id="getMemberView" parameterType="String" resultType="MemberDto">
+		select id, name, area, age
+		from member_이재열
+		where id = #{viewId}
+	</select>
+	
+	<select id="getCheckId" parameterType="String" resultType="String">
+		select name
+		from member_이재열
+		where id = #{checkId}
+	</select>
+	
+	<insert id="memberSave" parameterType="MemberDto">
+		insert into member_이재열
+		(id, name, area, age)
+		values
+		('${id}','${name}','${area}',${age})
+	</insert>
+	
+	<select id="getMemberList" resultType="MemberDto">
+		select id, name
+		from member_이재열
+	</select>
+		
+	<select id="getMemberListMap" parameterType="map" resultType="MemberDto">
+		select id, name
+		from member_이재열
+		where ${selectValue} like '%${searchValue}%'
+	</select>
+</mapper>
